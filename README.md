@@ -4,7 +4,7 @@ This repository demonstrates a straightforward **Continuous Integration and Cont
 
 ## 🧩 Architecture Overview
 
-![CI/CD Pipeline Diagram](images/cicd_pipeline.png)
+![CI/CD Pipeline Diagram](Images/cicd_pipeline.png)
 
 * **Frontend**: Node.js application in the `app.js` file.
 * **Docker**: Dockerfile to containerize the application. 🐳
