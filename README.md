@@ -1,48 +1,55 @@
-🚀 Simple CI/CD Project with GitHub Actions
+# 🚀 Simple CI/CD Project with GitHub Actions
 
-This repository demonstrates a straightforward Continuous Integration and Continuous Deployment (CI/CD) pipeline for a Node.js application using GitHub Actions and Docker.
+This repository demonstrates a straightforward **Continuous Integration and Continuous Deployment (CI/CD)** pipeline for a Node.js application using **GitHub Actions** and **Docker**.
 
-🧩 Architecture Overview
+## 🧩 Architecture Overview
 
-Frontend: Node.js application in the app.js file.
+![CI/CD Pipeline Diagram](images/cicd_pipeline.png)
 
-Docker: Dockerfile to containerize the application.
+* **Frontend**: Node.js application in the `app.js` file.
+* **Docker**: Dockerfile to containerize the application. 🐳
+* **CI/CD**: GitHub Actions workflows in `.github/workflows`. ⚙️
 
-CI/CD: GitHub Actions workflows in .github/workflows.
+## ✨ Features
 
-✨ Features
+* ✅ Automated build and test with GitHub Actions.
+* 🐳 Containerization for consistent environments.
+* 🚀 Continuous deployment to a specified environment.
 
-✅ Automated build and test with GitHub Actions.
+## ⚙️ Prerequisites
 
-🐳 Containerization for consistent environments.
+* Docker installed 🐳
+* GitHub repository with secrets configured for Docker registry 🔐
 
-🚀 Continuous deployment to a specified environment.
+## 🛠 Setup Instructions
 
-⚙️ Prerequisites
+### 1️⃣ Clone the Repository
 
-Docker installed 🐳
-
-GitHub repository with secrets configured for Docker registry 🔐
-
-🛠 Setup Instructions
-1️⃣ Clone the Repository
+```bash
 git clone https://github.com/gawalishankar/simple-CI-CD-project.git
 cd simple-CI-CD-project
+```
 
-2️⃣ Build Docker Image
+### 2️⃣ Build Docker Image
+
+```bash
 docker build -t my-node-app .
+```
 
-3️⃣ Run Docker Container
+### 3️⃣ Run Docker Container
+
+```bash
 docker run -p 8080:8080 my-node-app
+```
 
-4️⃣ Access Application
+### 4️⃣ Access Application
 
-Open your browser and navigate to http://localhost:8080 to view the application.
+Open your browser and navigate to `http://localhost:8080` to view the application.
 
-🔄 GitHub Actions Workflow
+## 🔄 GitHub Actions Workflow
 
-The .github/workflows directory contains the CI/CD workflow configuration. Ensure that your GitHub repository has the necessary secrets configured for Docker registry authentication.
+The `.github/workflows` directory contains the CI/CD workflow configuration. Ensure that your GitHub repository has the necessary secrets configured for Docker registry authentication.
 
-📄 License
+## 📄 License
 
 MIT License
